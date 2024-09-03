@@ -1,6 +1,4 @@
-package trabalho.utfpr.tsi.exchange.consumer.receita;
-
-import java.util.Map;
+package br.com.receita.federal;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -8,12 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Listener {
 	
-
-	@RabbitListener(queues = "transacoes.financeiras")
-    public void processarEvento(Map<String, Object> evento) throws InterruptedException {
-
-        System.out.println("Processando transação: " + evento);
-        Thread.sleep(1000);
-    }
-
+	@RabbitListener(queues = "receita.federal")
+	public void listen(String in) {
+		System.out.println("Receita Federal");
+		System.out.println("Processando transação suspeita: "+in);
+	}
 }
