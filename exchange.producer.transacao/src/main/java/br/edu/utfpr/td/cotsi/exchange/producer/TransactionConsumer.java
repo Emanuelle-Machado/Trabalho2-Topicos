@@ -25,9 +25,9 @@ public class ExchangeProducerApp {
 	
 	@PostConstruct
 	public void configurarCanais() {
-		Queue policiaFederal = new Queue("policia.federal", true);
+		Queue policiaFederal = new Queue("federal.policia", true);
 		amqpAdmin.declareQueue(policiaFederal);
-		Queue receitaFederal = new Queue("receita.federal", true);
+		Queue receitaFederal = new Queue("federal.receita", true);
 		amqpAdmin.declareQueue(receitaFederal);
 		
 		FanoutExchange fanout = new FanoutExchange("transacoes.suspeitas", true, false);

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("br.com.policia.federal")
+@ComponentScan("br.com.federal.policia")
 public class ExchangeConsumerApp {
 
 	public static void main(String[] args) throws Exception {
