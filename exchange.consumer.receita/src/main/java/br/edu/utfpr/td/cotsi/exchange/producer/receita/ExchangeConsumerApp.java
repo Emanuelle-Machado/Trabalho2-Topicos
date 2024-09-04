@@ -1,4 +1,4 @@
-package br.com.receita.federal;
+package br.edu.utfpr.td.cotsi.exchange.producer.receita;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

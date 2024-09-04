@@ -1,4 +1,4 @@
-package br.com.policia.federal;
+package br.edu.utfpr.td.cotsi.exchange.producer.policia;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

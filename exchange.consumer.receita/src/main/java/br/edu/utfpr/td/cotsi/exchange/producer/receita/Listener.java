@@ -1,4 +1,4 @@
-package br.com.receita.federal;
+package br.edu.utfpr.td.cotsi.exchange.producer.receita;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

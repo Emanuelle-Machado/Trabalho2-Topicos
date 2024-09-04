@@ -1,4 +1,4 @@
-package br.com.policia.federal;
+package br.edu.utfpr.td.cotsi.exchange.producer.policia;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

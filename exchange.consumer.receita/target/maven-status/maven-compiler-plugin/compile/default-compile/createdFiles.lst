@@ -1,2 +1,2 @@
-br\edu\utfpr\td\cotsi\exchange\producer\Producer.class
-br\edu\utfpr\td\cotsi\exchange\producer\ExchangeProducerApp.class
+br\edu\utfpr\td\cotsi\exchange\producer\receita\ExchangeConsumerApp.class
+br\edu\utfpr\td\cotsi\exchange\producer\receita\Listener.class

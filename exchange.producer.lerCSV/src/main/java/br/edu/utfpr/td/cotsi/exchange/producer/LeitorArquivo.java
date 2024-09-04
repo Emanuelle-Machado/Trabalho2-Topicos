@@ -1,4 +1,4 @@
-package br.com.transacoes.producer;
+package br.edu.utfpr.td.cotsi.exchange.producer;
 
 import java.io.FileReader;
 import java.io.IOException;

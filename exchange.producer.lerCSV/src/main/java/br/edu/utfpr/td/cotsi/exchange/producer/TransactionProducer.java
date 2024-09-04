@@ -1,4 +1,4 @@
-package br.com.transacoes.producer;
+package br.edu.utfpr.td.cotsi.exchange.producer;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import com.google.gson.Gson;
 
 @SpringBootApplication
 @ComponentScan("br.com.transacoes.producer")
-public class TransacoesProducerApp {
+public class TransactionProducer {
 
     @Autowired
     private AmqpAdmin amqpAdmin;
@@ -27,7 +27,7 @@ public class TransacoesProducerApp {
     private Queue filaTransacoes;
     
     public static void main(String[] args) throws Exception{
-        SpringApplication.run(TransacoesProducerApp.class, args);
+        SpringApplication.run(TransactionProducer.class, args);
     }
     
     @PostConstruct

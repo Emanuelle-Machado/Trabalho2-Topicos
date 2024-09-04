@@ -1,4 +1,4 @@
-package br.com.transacoes.producer;
+package br.edu.utfpr.td.cotsi.exchange.producer;
 
 public class Transacao {
 	private String codigo;
