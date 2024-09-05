@@ -8,23 +8,23 @@ trabalho para a matéria de tópicos avançados, para ser avaliado.
 
 ### Ler o arquivo transacoes.csv
 
-1. #### exchange.producer.lerCSV: 
+1. #### transacoes.producer: 
 Produtor com leitor de CSV
 
 ### Fazer o exchange intermediário
 
-2. #### exchange.producer.transacao:
+2. #### transacoes.suspeitas:
 Faz o exchange de transacoes.suspeitas com as filas policia.federal e receita.federal
 
-3. #### exchange.consumer.transacao:
+3. #### transacoes.consumer:
 Leitor da fila transacoes que faz exchange caso a transacao tenha + de 40k se não imprime a transação no console
 
 ### Leitores para policia e receita federal
 
-4. #### exchange.consumer.policia:
+4. #### policia.federal:
 Leitor da fila federal.policia
     
-5. #### exchange.consumer.receita:
+5. #### receita.federal:
 Leitor da fila federal.receita
     
 
