@@ -8,23 +8,23 @@ trabalho para a matéria de tópicos avançados, para ser avaliado.
 
 ### Ler o arquivo transacoes.csv
 
-1. #### transacoes.producer: 
+1. #### transacoes.producer (transacoes.producer.jar): 
 Produtor com leitor de CSV
 
 ### Fazer o exchange intermediário
 
-2. #### transacoes.suspeitas:
-Faz o exchange de transacoes.suspeitas com as filas policia.federal e receita.federal
+2. #### transacoes.suspeitas (exchange.producer.jar):
+Faz o exchange de transacoes.suspeitas e as filas policia.federal e receita.federal
 
-3. #### transacoes.consumer:
-Leitor da fila transacoes que faz exchange caso a transacao tenha + de 40k se não imprime a transação no console
+3. #### transacoes.consumer (transacoes.consumer.jar):
+Leitor da fila transacoes que faz exchange caso o valor tenha + de 40000
 
 ### Leitores para policia e receita federal
 
-4. #### policia.federal:
+4. #### policia.federal (policia.federal.jar):
 Leitor da fila federal.policia
     
-5. #### receita.federal:
+5. #### receita.federal (receita.federal.jar):
 Leitor da fila federal.receita
     
 
