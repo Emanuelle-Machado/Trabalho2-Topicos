@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.google.gson.Gson;
 
 @SpringBootApplication
-@ComponentScan("br.com.transacoes.producer")
+@ComponentScan("br.com.exchange.leitor")
 public class TransactionProducer {
 
     @Autowired

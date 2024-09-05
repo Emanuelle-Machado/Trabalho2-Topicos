@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("br.com.transacoes.consumer")
+@ComponentScan("br.com.exchange.consumer")
 public class TransactionConsumer {
 
 	@Autowired
@@ -20,12 +20,14 @@ public class TransactionConsumer {
 
 	public static void main(String[] args) throws Exception{
 		SpringApplication.run(TransactionConsumer.class, args);
+		System.out.println("Iniciando transaction consumer");
 	}
 	
 	@PostConstruct
 	public void criarFila() {
 		filaTransacoes = new Queue("transacoes.financeiras", true);
 		amqpAdmin.declareQueue(filaTransacoes);
+		System.out.println("Fila criada");
 	}
 
 }

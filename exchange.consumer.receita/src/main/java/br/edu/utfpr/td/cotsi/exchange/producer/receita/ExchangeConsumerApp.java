@@ -5,11 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("br.com.federal.receita")
+@ComponentScan("br.com.exchange.receita")
 public class ExchangeConsumerApp {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(ExchangeConsumerApp.class, args);
+		System.out.println("Iniciando leitura de receita federal");
 	}
 
 }

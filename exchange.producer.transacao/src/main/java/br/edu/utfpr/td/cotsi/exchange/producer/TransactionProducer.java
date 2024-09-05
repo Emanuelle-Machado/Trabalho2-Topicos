@@ -1,4 +1,4 @@
-package exchange.producer.producer;
+package br.edu.utfpr.td.cotsi.exchange.producer;
 
 import javax.annotation.PostConstruct;
 
@@ -14,13 +14,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("br.com.exchange.producer")
-public class ExchangeProducerApp {
+public class TransactionProducer {
 	
 	@Autowired
 	private AmqpAdmin amqpAdmin;
 
 	public static void main(String[] args)  throws Exception{
-		SpringApplication.run(ExchangeProducerApp.class, args);
+		SpringApplication.run(TransactionProducer.class, args);
+		System.out.println("Iniciando transaction producer");
 	}
 	
 	@PostConstruct
@@ -36,6 +37,8 @@ public class ExchangeProducerApp {
 		amqpAdmin.declareBinding(binding);
 		binding = BindingBuilder.bind(receitaFederal).to(fanout);
 		amqpAdmin.declareBinding(binding);
+		
+		System.out.println("configurando canais");
 	}
 
 }

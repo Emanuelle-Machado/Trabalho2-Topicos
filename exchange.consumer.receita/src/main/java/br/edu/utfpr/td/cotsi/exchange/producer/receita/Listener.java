@@ -9,6 +9,6 @@ public class Listener {
 	@RabbitListener(queues = "federal.receita")
 	public void listen(String in) {
 		System.out.println("Receita Federal");
-		System.out.println("Processando transação suspeita: "+in);
+		System.out.println("Processando transação: " + in);
 	}
 }
