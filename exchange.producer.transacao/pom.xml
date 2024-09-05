@@ -5,6 +5,7 @@
 	<groupId>br.edu.utfpr.td.cotsi</groupId>
 	<artifactId>exchange.producer.transacao</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

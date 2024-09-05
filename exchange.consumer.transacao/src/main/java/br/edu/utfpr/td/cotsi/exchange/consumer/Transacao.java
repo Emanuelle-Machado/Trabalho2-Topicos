@@ -1,4 +1,4 @@
-package br.edu.utfpr.td.cotsi.exchange.consumer;
+package br.com.transacoes.consumer;
 
 public class Transacao {
 	private String codigo;
